@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <!-- Logo -->
+      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="opay-img/download (7).png" class="w-20" alt="Opay Logo" />
+      </a>
+  
+      <!-- Mobile menu button -->
+      <button data-collapse-toggle="navbar-dropdown" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+  
+      <!-- Main menu -->
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul class="flex flex-col font-medium mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 p-4 md:p-0">
+          
+          <!-- Personal -->
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-green-700 md:p-0 md:dark:text-blue-500"
+              aria-current="page">
+              Personal
+            </a>
+          </li>
+  
+          <!-- Business -->
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
+              Business
+            </a>
+          </li>
+  
+          <!-- Company Dropdown -->
+          <li class="relative">
+            <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+              class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+              Company
+              <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg>
+            </button>
+  
+            <!-- Dropdown -->
+            <div id="dropdownNavbar"
+              class="hidden absolute z-20 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-md w-44 dark:bg-gray-700 dark:divide-gray-600 mt-2">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-400">
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a></li>
+                <li><a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a></li>
+              </ul>
+              <div class="py-1">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+              </div>
+            </div>
+          </li>
+  
+          <!-- CSR -->
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white">
+              CSR
+            </a>
+          </li>
+  
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <section>
+        <div class="relative bg-[url('/home01.jpg')] bg-cover bg-center h-screen w-full">
+
+
+            <!-- Content -->
+            <div class="absolute top-30 left-20 h-full text-white text-start px-4">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                    We are Beyond Banking
+                </h1>
+                <p class="mt-4 text-base sm:text-lg md:text-sm font-semibold tracking-wider font-sans  max-w-xl text-black">
+                    With mission to make financial services more inclusive through technology, OPay is dedicated to
+                    providing secure, easy to use & affordable financial services with super fast user experience,
+                    amazing incentive package on transfer/airtime & data top-up, innovative product to use as balance
+                    with amazing daily interest, reliable debit card with no charge and best resolution experience etc.
+                    With OPay account, you can have full control of your finances, payments & transactions with ease,
+                    all on one platform! Yes, OPay is your one-stop payment services platform and more.
+                </p>
+                <img src="opay-img/frame.png" class="mt-7" alt="">
+                <img src="opay-img/playstore.png" class="h-25" alt="" srcset="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Slide -->
+
+    <section>
+        <div class="bg-white py-16 sm:py-24">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+                    <!-- Card Start -->
+                    <div class="flex flex-col items-center text-start">
+                        <img src="opay-img/slide-img-1.png" class="w-36 -mb-3 ml-19 z-10" alt="">
+                        <div
+                            class="w-full p-6 rounded-lg hover:bg-green-200 hover:text-white shadow-md text-white bg-white transition-all">
+                            <i class="fa-solid fa-address-book fa-2x mb-2" style="color: #63E6BE;"></i>
+                            <h5 class="text-lg font-extrabold text-blue-600">Easy Account Opening</h5>
+                            <p class="text-black font-semibold text-sm">Instant account opening with amazing welcome
+                                bonuses.</p>
+                        </div>
+                    </div>
+                    <!-- Repeat 4 more cards below (copy + paste) -->
+                    <!-- Card 2 -->
+                    <div class="flex flex-col items-center text-start">
+                        <img src="opay-img/slide-img-2.png" class="w-36  -mb-3 ml-19 z-10" alt="">
+                        <div
+                            class="w-full p-6 rounded-lg hover:bg-green-200 shadow-md text-white bg-white transition-all">
+                            <i class="fa-solid fa-angles-right fa-2x mb-2" style="color: #63E6BE;"></i>
+                            <h5 class="text-lg font-extrabold text-blue-600">Easy Account Opening</h5>
+                            <p class="text-black font-semibold text-sm">Instant account opening with amazing welcome
+                                bonuses.</p>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="flex flex-col items-center text-start">
+                        <img src="opay-img/slide-img-3.png" class="w-36 -mb-3 ml-19 z-10" alt="">
+                        <div
+                            class="w-full p-6 rounded-lg hover:bg-green-200 shadow-md text-white bg-white transition-all">
+
+                            <i class="fa-regular fa-star fa-2x mb-2" style="color: #63E6BE;"></i>
+                            <h5 class="text-lg font-extrabold text-blue-600">Easy Account Opening</h5>
+                            <p class="text-black font-semibold text-sm">Instant account opening with amazing welcome
+                                bonuses.</p>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="flex flex-col items-center text-start">
+                        <img src="opay-img/slide-img-4.png" class="w-36 -mb-3 ml-19 z-10" alt="">
+                        <div
+                            class="w-full p-6 rounded-lg hover:bg-green-200 shadow-md text-white bg-white transition-all">
+
+                            <i class="fa-solid fa-credit-card fa-2x mb-2" style="color: #63E6BE;"></i>
+                            <h5 class="text-lg font-extrabold text-blue-600">Easy Account Opening</h5>
+                            <p class="text-black font-semibold text-sm">Instant account opening with amazing welcome
+                                bonuses.</p>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="flex flex-col items-center text-start">
+                        <img src="opay-img/slide-img-5.png" class="w-36 -mb-3 ml-19 z-10" alt="">
+                        <div
+                            class="w-full p-6 rounded-lg hover:bg-green-200 shadow-md text-white bg-white transition-all">
+
+                            <i class="fa-solid fa-money-bill  fa-2x mb-2" style="color: #63E6BE;"></i>
+                            <h5 class="text-lg font-extrabold text-blue-600">Easy Account Opening</h5>
+                            <p class="text-black font-semibold text-sm">Instant account opening with amazing welcome
+                                bonuses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1 class="text-4xl sm:text-5xl font-bold font-san text-start px-16 mb-12">Our Services</h1>
+        <div class="bg-[#00B386] px-16 py-16 shadow-md">
+
+            <div class="flex flex-col lg:flex-row items-center  rounded-lg ">
+                <!-- Text Content -->
+                <div class="flex-1 mb-8 lg:mb-0 lg:mr-12 text-white">
+                    <h1 class="text-4xl sm:text-4xl font-bold mb-4">Fund your Account, Make Transfers, Pay Bills</h1>
+                    <p class="text-white mb-6 tracking-wide text-2xl">
+                        Live life on your own terms! Add money to your OPay wallet and transfer to other bank accounts
+                        for free. Enjoy bonuses on airtime & data top-ups and fast bill payments at no extra charge.
+                    </p>
+
+                </div>
+
+                <!-- Image -->
+                <div class="flex-1">
+                    <img src="opay-img/OurServices01.jpg" alt="Our Services"
+                        class="max-w-full rounded-lg shadow-2xl object-cover" />
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[#f5f7f6] px-16 py-16 shadow-md">
+
+            <div class="flex flex-col lg:flex-row items-center gap-14  rounded-lg ">
+                <!-- Image -->
+                <div class="flex-1">
+                    <img src="opay-img/OurServices02.jpg" alt="Our Services"
+                        class="max-w-full rounded-lg shadow-2xl object-cover" />
+                </div>
+                <!-- Text Content -->
+                <div class="flex-1 mb-8 lg:mb-0 lg:mr-12 text-[#00B386]">
+                    <h1 class="text-4xl sm:text-4xl font-bold  mb-4">OPay Debit Cards,
+                        Your Passport To The World</h1>
+                    <p class=" mb-6 tracking-wider text-2xl text-black ">
+                        Get your OPay Debit Card instantly at select OPay agent stores or apply via the OPay app. Enjoy
+                        secure, fast, and convenient payments with zero maintenance fees for active cards! The OPay
+                        Debit Card is accepted at any ATM, POS, or online.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bg-[#00B386] px-16 py-16 shadow-md">
+
+            <div class="flex flex-col lg:flex-row items-center  rounded-lg ">
+                <!-- Text Content -->
+                <div class="flex-1 mb-8 lg:mb-0 lg:mr-12 text-white">
+                    <h1 class="text-4xl sm:text-4xl font-bold mb-4">Owealth</h1>
+                    <p class="text-white mb-6 tracking-wider text-2xl">
+                        With Owealth, you can get amazing daily interest on your funds while having full access and
+                        control of the money. Make transactions at any time without affecting your interest!
+                        Powered by BlueRidge Microfinance Bank
+                    </p>
+
+                </div>
+
+                <!-- Image -->
+                <div class="flex-1">
+                    <img src="opay-img/OurServices03.jpg" alt="Our Services"
+                        class="max-w-full rounded-lg shadow-2xl object-cover" />
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[#f5f7f6] px-16 py-16 shadow-md">
+
+            <div class="flex flex-col lg:flex-row items-center gap-14  rounded-lg ">
+                <!-- Image -->
+                <div class="flex-1">
+
+                    <video autoplay muted loop src="opay-img/downloadtheOPayapp.mp4"
+                        class="max-w-full rounded-lg shadow-2xl object-cover"></video>
+                </div>
+                <!-- Text Content -->
+                <div class="flex-1 mb-8 lg:mb-0 lg:mr-12 text-[#00B386]">
+                    <img src="opay-img/code.png" class="w-30 rounded-md shadow-md mb-7" alt="">
+                    <p class=" mb-6 tracking-wider text-2xl text-black ">
+                        Use your phones camera to scan and download the OPay app
+                        Available on <span class="text-[#00B386]">iOS</span> and <span
+                            class="text-[#00B386]">Android</span>
+                    </p>
+                    <img src="opay-img/playstore.png" class="w-48" alt="">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Testimonalies -->
+    <section>
+        <div class="bg-white  sm:py-24 lg:px-8">
+            <div class="bg-white py-16 px-6 sm:py-24 lg:px-8">
+                <div class="max-w-7xl mx-auto">
+                    <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-12">
+                        Here is what our customers think
+                    </h1>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                        <!-- Card 1 -->
+                        <div class="group bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="opay-img/customers1.jpeg" alt="Customer 1"
+                                class="w-full h-64 object-cover group-hover:opacity-80 transition" />
+                            <div class="p-6">
+                                <p class="text-gray-500 text-lg font-semibold">
+                                    I feel very satisfied with Opay's service, I've been using OPay for over 4 years and
+                                    will definitely recommend Opay to my family & friends
+                                </p>
+                                <p class="text-blue-800 mt-6 text-lg font-bold">Mr Malik (Customer)</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="group bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="opay-img/customers2.png" alt="Customer 2"
+                                class="w-full h-64 object-cover group-hover:opacity-80 transition" />
+                            <div class="p-6">
+                                <p class="text-gray-500 text-lg font-semibold">
+                                    I Love Opay! the network is very good.... up to 100% network uptime and super fast &
+                                    their customer service is quick, fast and effecient, complaints are resolved quickly
+                                </p>
+                                <p class="text-blue-800 mt-6 text-lg font-bold">Mrs Beacon Malik (Customer)</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="group bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="opay-img/customer3.jpeg" alt="Customer 3"
+                                class="w-full h-64 object-cover group-hover:opacity-80 transition" />
+                            <div class="p-6">
+                                <p class="text-gray-500 text-lg font-semibold">
+                                    Opay has been giving me joy since 2020, Ah, within one to two seconds, you will
+                                    surely see the money transferred to you !
+                                </p>
+                                <p class="text-blue-800 mt-6 text-lg font-bold">Mummy Habeeb (Agent)</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+
+                        <div class="group bg-white rounded-lg shadow-md overflow-hidden">
+                            <img src="opay-img/customer4.jpeg
+                            " alt="Customer 3" class="w-full h-64 object-cover group-hover:opacity-80 transition" />
+                            <div class="p-6">
+                                <p class="text-gray-500  font-semibold text-lg">
+                                    Opay makes banking very easy for me; transfer of funds & transaction are seamless; I
+                                    give OPay a solid 10/10
+                                </p>
+                                <p class="text-blue-800 mt-6 text-lg font-bold">Mr Malik (Customer)</p>
+                            </div>
+                        </div>
+
+    </section>
+    <!-- Security -->
+    <section>
+        <section class="bg-[#00B386] px-6 sm:px-10 md:px-16 py-16 shadow-md">
+            <div class="flex flex-col lg:flex-row items-center gap-10 rounded-lg">
+                <!-- Images -->
+                <div class="flex flex-1 flex-col gap-6">
+                    <img src="opay-img/security-banner-1.png" alt="Security Banner 1"
+                        class="w-full rounded-lg shadow-2xl object-cover" />
+                    <img src="opay-img/security-banner-2.png" alt="Security Banner 2"
+                        class="w-full rounded-lg shadow-2xl object-cover" />
+                </div>
+
+                <!-- Text Content -->
+                <div class="flex-1 flex flex-col justify-center">
+                    <h1 class="text-3xl sm:text-4xl font-bold text-blue-800 mb-8">
+                        Your Security and Privacy is our Priority
+                    </h1>
+
+                    <div class="space-y-8">
+                        <!-- Section 1 -->
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl text-blue-800 font-semibold mb-4">Advanced Fraud Detection
+                            </h2>
+                            <p class="text-white text-lg sm:text-2xl font-semibold tracking-wide">
+                                Your data is stored and encrypted using strong cryptography. We scan our systems daily
+                                against security threats.
+                            </p>
+                        </div>
+
+                        <!-- Section 2 -->
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl text-blue-800 font-semibold mb-4">Safe Transactions</h2>
+                            <p class="text-white text-lg sm:text-2xl font-semibold tracking-wide">
+                                We are compliant with PCI DSS. Your transactions are always encrypted and secured.
+                            </p>
+                        </div>
+
+                        <!-- Section 3 -->
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl text-blue-800 font-semibold mb-4">Lock Your Account
+                                Instantly</h2>
+                            <p class="text-white text-lg sm:text-2xl font-semibold tracking-wide">
+                                Quick dial <strong>*955*131#</strong> or <strong>*955*132#</strong> to lock your account
+                                or card if stolen or misplaced.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer's Pr -->
+        <section class="bg-blue-900 lg:bg-[#eef0ef] px-6 sm:px-10 md:px-16 py-16 shadow-md">
+            <div class="flex flex-col lg:flex-row items-center gap-10 rounded-lg">
+                <!-- Text Content -->
+                <div class="flex-1 flex flex-col justify-center">
+                    <div class="space-y-8">
+                        <h1 class="text-3xl sm:text-4xl font-bold text-blue-800 mb-8">Customer Satisfaction, Our
+                            Priority</h1>
+                        <!-- Section 1 -->
+                        <div>
+                            <h2 class="text-2xl sm:text-3xl text-white lg:text-blue-800 font-semibold mb-4">
+                                Advanced Fraud Detection
+                            </h2>
+                            <p class="text-white lg:text-black text-lg sm:text-2xl font-semibold tracking-wide mb-6">
+                                We are here for you to provide 24/7 quick customer service. Visit our in-app customer
+                                service center,
+                                physical service center, message us via official social media, or call our hotline
+                                below.
+                            </p>
+
+                            <div class="flex  gap-4 mt-6">
+                                <i class="fa-solid fa-phone fa-2x" style="color: #63E6BE;"></i>
+                                <p class="text-white lg:text-black text-lg sm:text-xl font-semibold tracking-wide">
+                                    0700 8888 328 OR 020 18888 328 (App & Card queries)<br />
+                                    0700 8888 329 OR 020 18888 329 (POS Business queries)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Images -->
+                <div class="flex flex-1 flex-col gap-6 mt-10 lg:mt-0">
+                    <img src="opay-img/download (4).jpeg" alt="First Security Image - Amsadon"
+                        class="w-full h-52 rounded-lg shadow-2xl object-cover object-center" />
+                    <img src="opay-img/download (5).jpeg" alt="Second Security Image - Amsadon"
+                        class="w-full h-52 rounded-lg shadow-2xl object-cover" />
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Timeline -->
+
+        <section class="lg:bg-[#cdcecd]">
+            <div>
+                <video autoplay muted loop src="opay-img/timeline1127.mp4"
+                    class="w-[60%]  rounded-lg  object-cover mx-auto"></video>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-white dark:bg-gray-900">
+            <div class="w-full h-[50%] relative bg-[url('/nibss.jpg')] bg-cover bg-center">
+                <!-- Green overlay -->
+                <div class="absolute inset-0 bg-[#00B386] opacity-80"></div>
+
+                <div
+                    class="relative z-10 max-w-7xl mx-auto  px-6 py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+
+                    <!-- Company -->
+                    <div class="text-white">
+                        <h2 class="mb-6 text-lg font-semibold uppercase">Company</h2>
+                        <ul class="space-y-4 font-medium">
+                            <li><a href="#" class="hover:underline">About</a></li>
+                            <li><a href="#" class="hover:underline">Press & Media</a></li>
+                            <li><a href="#" class="hover:underline">Contact Us</a></li>
+                            <li><a href="#" class="hover:underline">Report an Issue</a></li>
+                            <li><a href="#" class="hover:underline">Security Features</a></li>
+                            <li>
+                                WhistleBlowing Petition:
+                                <a href="mailto:whistleblower01@opay-inc.com" class="hover:underline">
+                                    whistleblower01@opay-inc.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Resources -->
+                    <div class="text-white">
+                        <h2 class="mb-6 text-lg font-semibold uppercase">Resources</h2>
+                        <ul class="space-y-4 font-medium">
+                            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+                            <li><a href="#" class="hover:underline">Documentation</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Discover -->
+                    <div class="text-white">
+                        <h2 class="mb-6 text-lg font-semibold uppercase">Discover</h2>
+                        <ul class="space-y-4 font-medium">
+                            <li><a href="#" class="hover:underline">Personal</a></li>
+                            <li><a href="#" class="hover:underline">Business</a></li>
+                            <li><a href="#" class="hover:underline">Agent Network</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- HQ Address -->
+                    <div class="text-white">
+                        <h2 class="mb-6 text-lg font-semibold uppercase">OPay Office</h2>
+                        <p class="font-medium">
+                            HQ: Alexander House, Plot 9, Dr. Nurudeen Olowopopo Avenue, Alausa, Lagos
+                        </p>
+                    </div>
+
+                    <!-- Other Offices -->
+                    <!-- Other Offices -->
+                    <div class="text-white">
+                        <h2 class="mb-6 text-lg font-semibold uppercase">Other Offices</h2>
+                        <ul class="space-y-4 font-medium text-sm max-h-64 overflow-y-auto pr-2">
+                            <li><span class="font-bold">Abuja:</span> Uyk Hexahub Plaza, Balanga Crescent off Uke
+                                Street, Garki 11</li>
+                            <li><span class="font-bold">Allen, Ikeja:</span> No 103 Mosesola House, Allen Road, Ikeja
+                                Lagos</li>
+                            <li><span class="font-bold">Festac:</span> Plot 3084, 24 Sky Castle Plaza, Festac Town,
+                                Lagos</li>
+                            <li><span class="font-bold">Ikorodu:</span> No. 132B Lagos Road, Ikorodu Jumofak Bus Stop,
+                                Lagos</li>
+                            <li><span class="font-bold">Abeokuta:</span> Dolly House Opposite Laroy Hotel, Abiola Way
+                            </li>
+                            <li><span class="font-bold">Ibadan:</span> Tricennial House, 189B, Fajuyi Road, Adamasingba
+                            </li>
+                            <li><span class="font-bold">Jos:</span> Thilda's Center, Shop 12 Opposite Gig Logistics
+                                Dadin Kowa</li>
+                            <li><span class="font-bold">Kaduna:</span> ASD City Mall, Katsina Road, Kaduna State</li>
+                            <li><span class="font-bold">Kano:</span> 91/94 Ibrahim Taiwo Road, Fagge LGA, Kano</li>
+                            <li><span class="font-bold">Osogbo:</span> KLM 3, Gbongan Ibadan expressway, Osun State</li>
+                            <li><span class="font-bold">Benue:</span> Chiventis Plaza, Atom Kpera Road, Modern Market
+                            </li>
+                            <li><span class="font-bold">Akwa Ibom:</span> Plot 104 Nsikak Eduok Ave, Uyo</li>
+                            <li><span class="font-bold">Imo:</span> No.138 Tetlow Road, Owerri</li>
+                            <li><span class="font-bold">Abia:</span> No 37 Okigwe Road, Aba</li>
+                            <li><span class="font-bold">Kogi:</span> No 36, 1BB Way, Lokoja</li>
+                            <li><span class="font-bold">Portharcourt:</span> Plot 79 Evo Road, GRA Portharcourt</li>
+                            <li><span class="font-bold">Edo:</span> No 5 Dawson Road, Benin City</li>
+                            <li><span class="font-bold">Akure:</span> No 1 Leo Junction, Oyemekun Road</li>
+                            <li><span class="font-bold">Asaba:</span> 64 DLA Road, Asaba</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <!-- <div class="absolute inset-0 bg-[#00B386] opacity-80"></div> -->
+                <div class="bg-[#a0e6d4] relative z-10">
+                    <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+                      
+                      <!-- Logo -->
+                      <div>
+                        <img src="opay-img/download (7).png" alt="Opay Logo" class="w-32 sm:w-40 object-contain" />
+                      </div>
+                  
+                      <!-- Copyright -->
+                      <div>
+                        <p class="text-sm md:text-base font-semibold text-gray-700 text-center">
+                          © 2023 OPay Digital Services Limited.
+                        </p>
+                      </div>
+                  
+                      <!-- Social Icons -->
+                      <div class="flex items-center space-x-4">
+                        <a href="#" aria-label="Facebook">
+                          <i class="fa-brands fa-facebook fa-xl" style="color: #0a2452;"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                          <i class="fa-brands fa-square-instagram fa-xl" style="color: #143671;"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                          <i class="fa-brands fa-twitter fa-xl" style="color: #0f2f67;"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                          <i class="fa-brands fa-linkedin fa-xl" style="color: #193b76;"></i>
+                        </a>
+                      </div>
+                  
+                    </div>
+                  </div>
+                  
+            </div>
+        </footer>
+
+        <script>
+            // Toggle mobile navbar menu
+            const toggleButton = document.querySelector('[data-collapse-toggle]');
+            const navbarMenu = document.getElementById('navbar-dropdown');
+          
+            toggleButton.addEventListener('click', () => {
+              navbarMenu.classList.toggle('hidden');
+            });
+          
+            // Toggle dropdown inside navbar (Company button)
+            const dropdownToggle = document.querySelector('[data-dropdown-toggle]');
+            const dropdownMenu = document.getElementById('dropdownNavbar');
+          
+            dropdownToggle.addEventListener('click', (e) => {
+              e.stopPropagation(); // Prevent event bubbling
+              dropdownMenu.classList.toggle('hidden');
+            });
+          
+            // Close dropdown if click outside
+            window.addEventListener('click', (e) => {
+              if (!dropdownMenu.contains(e.target) && !dropdownToggle.contains(e.target)) {
+                dropdownMenu.classList.add('hidden');
+              }
+            });
+          </script>
+          
+</body>
+
+</html>
